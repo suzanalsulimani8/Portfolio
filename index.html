@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suzan Alsulimani | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+
+    <div class="container">
+        <header>
+            <div class="header-info">
+                <h1>SUZAN MASHHOUR ALSULAIMANI</h1>
+                <p class="subtitle">Web Developer & IT Support</p>
+                <div class="location"><i data-lucide="map-pin" size="14"></i> jeddah|Makkah, Saudi Arabia</div>
+            </div>
+            <div class="header-controls">
+                <button id="themeToggle" class="btn-theme" title="Toggle Theme">
+                    <i data-lucide="moon"></i>
+                </button>
+            </div>
+            <div class="contact-links">
+                <a href="tel:+966590827013" class="btn-action"><i data-lucide="phone" size="16"></i> 0590827013</a>
+                <a href="mailto:suzan.alsulimani8@gmail.com" class="btn-action"><i data-lucide="mail" size="16"></i> Email</a>
+                <a href="https://linkedin.com/in/suzan-alsulimani" target="_blank" class="btn-action linkedin-btn"><i data-lucide="linkedin" size="16"></i> LinkedIn</a>
+                <a href="https://github.com/suzanalsulimani8" target="_blank" class="btn-action github-btn"><i data-lucide="github" size="16"></i> GitHub</a>
+            </div>
+        </header>
+
+        <section class="welcome-section">
+            <div class="award-tag"><i data-lucide="sparkles" size="14"></i> Award-Winning Developer</div>
+            <h2>Welcome to My Portfolio</h2>
+            <p>Select a career path to view specific details</p>
+        </section>
+
+        <div class="mode-selector">
+            <div class="mode-card active" id="devBtn" onclick="toggleMode('dev')">
+                <div class="icon-wrap dev-icon"><i data-lucide="code-2" size="32"></i></div>
+                <h3>Web Developer</h3>
+                <p>HTML • CSS • JavaScript</p>
+                <div class="tags">
+                    <span>Frontend </span><span>Backend </span><span>Full Stack </span>
+                </div>
+            </div>
+            <div class="mode-card" id="itBtn" onclick="toggleMode('it')">
+                <div class="icon-wrap it-icon"><i data-lucide="monitor" size="32"></i></div>
+                <h3>IT Support</h3>
+                <p>Technical Support • Networking • Security</p>
+                <div class="tags">
+                    <span>Windows </span><span>Networking </span><span>Security </span>
+                </div>
+            </div>
+        </div>
+
+        <main id="contentArea">
+            </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
